@@ -1,0 +1,98 @@
+@use "variabels";
+@use "modules/hero";
+@use "modules/project";
+@use "modules/navbar";
+@use "modules/footer";
+@use "reset";
+@use "layout";
+
+main{
+    background-color: variabels.$dark-grey;
+}
+.heading{
+    text-align: center;
+    font-family: variabels.$heroHeading;
+    font-size: 4rem;
+    text-transform: uppercase;
+    padding-top: 3rem;
+    color: white;
+}
+.profile-picture{
+    max-width: 240px;
+    object-fit: cover;
+
+    height: 240px;
+    border-radius: 50%;
+    margin: 2rem auto;
+}
+.aboutMe{
+    display: flex;
+    margin: 2rem auto;
+    gap: 3rem;
+    text-align: center;
+    max-width: 600px;
+    flex-direction: column;
+    font-family: variabels.$boxes-font;
+    &__heading{
+        color: white;
+        
+    }
+    &__text{
+        color: white;
+        font-size: 16px;
+    }
+}
+//her i stylingen til diverse lister
+.schoolAndWork{
+    display: flex;
+}
+.infoList--right{
+   
+}
+.infoList{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    padding: 3rem;
+    &__heading{
+        color: variabels.$hover-red;
+        font-family: variabels.$heroHeading;
+        font-size: 2rem;
+    }
+    &__listItem{
+        list-style: none;
+        text-align: center;
+        margin: 1rem 0;
+    }
+    &__link{
+        transition: 0.3s;
+        text-align: center;
+        font-weight: 500;
+        font-family: variabels.$heroHeading;
+        color: variabels.$beudo;
+        text-decoration: none;
+        font-size: 16px;
+        &:hover{
+            
+            transform: scale(2);
+            color: variabels.$hover-red;
+            .infoList__year{
+             
+                    transform: scale(1.1);
+                
+            }
+
+        }
+        
+    }
+    &__year{
+        display: block;
+         color: white;
+       transition: 0.3s;
+        font-weight: 900;
+        font-size: 1.5rem;
+       
+        
+    }
+}
