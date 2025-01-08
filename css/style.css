@@ -327,6 +327,7 @@ header {
   .twoBoxes__link {
     padding-bottom: 0.5rem;
     text-align: center;
+    display: none;
     width: 100%;
   }
 }
