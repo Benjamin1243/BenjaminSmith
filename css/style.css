@@ -160,11 +160,6 @@ header {
     height: 1400px;
   }
 }
-@media only screen and (min-width: 1500px) {
-  .twoBoxes {
-    grid-template-columns: 1fr 1.5fr;
-  }
-}
 .twoBoxes {
   display: grid;
   grid-template-columns: 1fr 1.1fr;
@@ -173,7 +168,6 @@ header {
   line-height: 2rem;
 }
 .twoBoxes__img {
-  filter: grayscale(60%);
   max-height: 600px;
   transition: 0.5s;
 }
@@ -334,6 +328,11 @@ header {
     padding-bottom: 0.5rem;
     text-align: center;
     width: 100%;
+  }
+}
+@media only screen and (min-width: 1500px) {
+  .twoBoxes {
+    grid-template-columns: 1fr 1fr;
   }
 }
 .project {

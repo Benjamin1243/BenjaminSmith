@@ -3,12 +3,7 @@
 //her kommer css til twoboxes
 //her kommer en ændring til når skærmen er større
 
-@media only screen and (min-width: 1500px) {
-    
-        .twoBoxes{
-            grid-template-columns: 1fr 1.5fr;
-        }
-    }
+
 .twoBoxes{
    
     display: grid;
@@ -18,7 +13,7 @@
     line-height: 2rem;
     //boxen til venstre
     &__img{
-        filter: grayscale(60%);
+        
         max-height:600px ;
         transition: 0.5s;
        
@@ -48,7 +43,7 @@
     @for $i from 1 through 4 {
         &__textDiv p:nth-child(#{$i}) {
             @include mixins.delayShow($i - 0.5);
-            @debug $i;
+            
         }
       }
       
@@ -156,4 +151,11 @@
             width: 100%;
         }
     }
+    }
+
+    @media only screen and (min-width: 1500px) {
+    
+        .twoBoxes{
+            grid-template-columns: 1fr 1fr;
+        }
     }
